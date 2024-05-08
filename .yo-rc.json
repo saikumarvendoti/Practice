@@ -1,0 +1,17 @@
+{
+  "generator-ui5-app": {
+    "namespace": "asst.test",
+    "framework": "SAPUI5",
+    "frameworkVersion": "1.123.1",
+    "author": "sai kumar",
+    "initrepo": true,
+    "appId": "asst.test",
+    "appURI": "asst/test",
+    "cdnDomain": "ui5.sap.com",
+    "defaultTheme": "sap_horizon",
+    "qunitCoverageFile": "qunit-coverage-istanbul.js",
+    "gte1_98_0": true,
+    "gte1_104_0": true,
+    "setupCompleted": true
+  }
+}
