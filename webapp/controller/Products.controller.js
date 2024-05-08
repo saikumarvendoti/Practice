@@ -13,9 +13,14 @@ sap.ui.define(["./BaseController", "sap/m/MessageBox", "sap/ui/model/json/JSONMo
                     this.idDefaultItems.setModel(this.localModel,"products");
                 },
                 error:function(error){
-                    console.log(error);
+                    console.log(error)
                 }
             })
-		}	
+		},
+        onPress:function(){
+            let items = this.getView().byId('idProducts').getSelectedItems();
+            let id = items[0].getBindingContextPath().split("/")[1];
+            alert(this.Results[id].ProductName);
+        }	
 	});
 });

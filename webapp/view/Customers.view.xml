@@ -12,7 +12,8 @@
 		title="{i18n>appTitle}"
 		id="page">
 		<content>
-			<Table id="idCustomerTable" inset="false" items="{Result>/}">
+			<Button press="onCollect" text="Select"/>
+			<Table id="idCustomerTable" inset="false" mode="MultiSelect" items="{Result>/}">
 				<headerToolbar>
 					<OverflowToolbar>
 						<content>

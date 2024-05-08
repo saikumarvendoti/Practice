@@ -12,7 +12,7 @@
 		title="{i18n>appTitle}"
 		id="page">
 		<content>
-			<List id="idProducts" items="{products>/}" headerText="Products"  growing="true" growingThreshold="" growingScrollToLoad="false">
+			<List id="idProducts" items="{products>/}" headerText="Products" mode="SingleSelect" growing="true" growingThreshold="" growingScrollToLoad="false" selectionChange="onPress">
 				<ObjectListItem title="{products>ProductID} - {products>ProductName}" number="{products>UnitPrice}" numberUnit="{CurrencyCode}">
 				<ObjectAttribute text="{products>QuantityPerUnit}"/>
 				</ObjectListItem>
