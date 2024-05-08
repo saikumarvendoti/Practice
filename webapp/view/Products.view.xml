@@ -1,0 +1,22 @@
+<mvc:View
+	controllerName="asst.test.controller.Products"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	core:require="{
+		formatter: 'asst/test/model/formatter'
+	}">
+
+	<Page
+		title="{i18n>appTitle}"
+		id="page">
+		<content>
+			<List id="idProducts" items="{products>/}" headerText="Products"  growing="true" growingThreshold="" growingScrollToLoad="false">
+				<ObjectListItem title="{products>ProductID} - {products>ProductName}" number="{products>UnitPrice}" numberUnit="{CurrencyCode}">
+				<ObjectAttribute text="{products>QuantityPerUnit}"/>
+				</ObjectListItem>
+			</List>
+		</content>
+	</Page>
+</mvc:View>
